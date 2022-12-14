@@ -74,7 +74,7 @@ def player_answer(playername,answer,adress,json_messages):
                         print("answer was wrong")
                         reply = " wrong!  "+ json_messages['Question'][qnum-1]["text"]
     else:
-        reply(" name wrong, are you cheating ? ")
+        reply = " name wrong, are you cheating ? "
     return reply    
 
 
@@ -87,12 +87,12 @@ def player_stepback(playername,adress,json_messages):
             if run['name'] == playername:
                 if run['secret']!=adress[0]:
                     print("wrong ip adress")
-                    reply(" ip adress wrong, are you cheating ? ")
+                    reply = " ip adress wrong, are you cheating ? "
                 else:
                     run["qid"] = 0
-                    reply(" stepped back from question, please get new one ")
+                    reply = " stepped back from question, please get new one "
     else:
-        reply(" name wrong, are you cheating ? ")
+        reply = " name wrong, are you cheating ? "
     return reply
 
 def leaderboard(json_messages):
@@ -136,8 +136,9 @@ def threaded_client(connection,address):
                         elif msg['id'] == 'answer':
                             extrastring = player_answer(msgfromclient['name'],msgfromclient['answer'],address,json_messages)
                             print("assigning question to ",msgfromclient['name'])
+                            
                         elif msg['id'] == 'stepback':
-                            (msgfromclient['name'],address,json_messages)
+                            extrastring = player_stepback(msgfromclient['name'],address,json_messages)
                         
                         msgtoclient = msg['text']+'  '+extrastring
             else:
