@@ -1,0 +1,86 @@
+{
+    "Message": [
+        {
+            "id": "help",
+            "text": "This is the Helpmessage\n type 'cmd': 'newplayer', 'name': 'yourname' for registering a new player \n type 'cmd': 'leaderboard' for seeing the leaderboard \n type 'cmd': 'requestquestion', 'name': 'yourname' for requesting a Quesion form the Pool\n  type 'cmd': 'answer', 'name': 'yourname', 'answer': THEANSWERTOTHEQUESTION\n 'cmd': 'stepback', 'name': 'yourname' to step back from too hard Question "
+        },
+        {
+            "id": "newplayer",
+            "text": " This is the new Player Message"
+        },
+        {
+            "id": "leaderboard",
+            "text": " leaderboard Message"
+        },
+        {
+            "id": "requestquestion",
+            "text": "requesting Question "
+        },
+        {
+            "id": "answer",
+            "text": "Answer to Question was "
+        },
+        {
+            "id": "stepback",
+            "text": "Stepping back from Question "
+        }
+    ],
+    "Question": [
+        {
+            "id": 1,
+            "text": "How many bits Has a Byte ? answer in int",
+            "answer": 8
+        },
+        {
+            "id": 2,
+            "text": "How many bits Has a uint8 ? answer in int",
+            "answer": 8
+        },
+        {
+            "id": 3,
+            "text": "whats the highest number a uint8 can have ? answer in int",
+            "answer": 255
+        },
+        {
+            "id": 4,
+            "text": "How many bits Has a Byte ? answer in int",
+            "answer": 8
+        },
+        {
+            "id": 5,
+            "text": "Python is a 'a' interpreted Language or 'b' compiled Language? Answer in str ",
+            "answer": "a"
+        },
+        {
+            "id": 6,
+            "text": "what is the highest number that can be represented with an int16? answer in int",
+            "answer": 32767
+        }
+    ],
+    "player": [
+        {
+            "name": "pl0",
+            "score": 0,
+            "secret": "127.0.0.1",
+            "qid": 4,
+            "not_answered": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        {
+            "name": "carlos",
+            "score": 3,
+            "secret": "127.0.0.1",
+            "qid": 0,
+            "not_answered": [
+                2,
+                4,
+                6
+            ]
+        }
+    ]
+}
