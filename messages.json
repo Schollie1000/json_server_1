@@ -55,31 +55,61 @@
             "id": 6,
             "text": "what is the highest number that can be represented with an int16? answer in int",
             "answer": 32767
+        },
+        {
+            "id": 7,
+            "text": "Who starts communication 'a' Server  or 'b' client ? Answer in str ",
+            "answer": "b"
+        },
+        {
+            "id": 8,
+            "text": "What does WAN stand for 'a' Wild Area Network  or 'b' Win another Nothing or 'c' Wide Area Network ? Answer in str ",
+            "answer": "c"
+        },
+        {
+            "id": 9,
+            "text": "Wheres does a Programmer start counting? Answer in int ",
+            "answer": 0
         }
     ],
     "player": [
         {
-            "name": "pl0",
-            "score": 0,
-            "secret": "127.0.0.1",
-            "qid": 4,
+            "name": "Abu",
+            "score": 2,
+            "secret": "139.174.9.39",
+            "qid": 0,
             "not_answered": [
                 1,
                 2,
                 3,
-                4,
-                5
+                6,
+                7,
+                8,
+                9
             ]
         },
         {
-            "name": "carlos",
-            "score": 3,
-            "secret": "127.0.0.1",
+            "name": "Samuel",
+            "score": 2,
+            "secret": "139.174.9.44",
+            "qid": 5,
+            "not_answered": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                8,
+                9
+            ]
+        },
+        {
+            "name": "Jalol",
+            "score": 8,
+            "secret": "139.174.9.43",
             "qid": 0,
             "not_answered": [
-                2,
-                4,
-                6
+                8
             ]
         }
     ]

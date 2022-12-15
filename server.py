@@ -7,7 +7,7 @@ import pickle
 import random
 
 ServerSocket = socket.socket()
-host = '127.0.0.1'
+host = '139.174.76.76'
 port = 1233
 ThreadCount = 0
 
